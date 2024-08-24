@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-8 text-center;
+}
+
+input {
+  @apply w-full p-4 text-lg border rounded mb-4;
+}
+
+button {
+  @apply w-full p-4 bg-blue-500 text-white text-lg rounded hover:bg-blue-600;
+}
+
+.response {
+  @apply mt-8 p-4 bg-white rounded shadow text-lg;
+}

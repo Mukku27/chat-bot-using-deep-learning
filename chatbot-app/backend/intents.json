@@ -1,0 +1,513 @@
+
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m Joana, your bot assistant", "I'm Joana, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Joana.", "I'm Joana!", "Just call me as Joana"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like today?", "Tell me the weather forecast", "Is it going to rain?"],
+      "responses": ["I'm sorry, I don't have real-time weather information. You can check a reliable weather website or app for the latest updates."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Share a funny story", "Make me laugh"],
+      "responses": ["Sure, here's a joke for you: Why don't scientists trust atoms? Because they make up everything!"]
+    },
+    {
+      "tag": "movie_recommendation",
+      "patterns": ["Recommend a movie", "What movie should I watch?", "Any good films lately?"],
+      "responses": ["I recommend checking out 'Inception' if you enjoy mind-bending thrillers. What genre are you in the mood for?"]
+    },
+    {
+      "tag": "book_recommendation",
+      "patterns": ["Suggest a book", "What should I read?", "Any good books you recommend?"],
+      "responses": ["If you like mystery, 'The Girl with the Dragon Tattoo' is a great read. Let me know your preferred genre for more recommendations!"]
+    },
+    {
+      "tag": "travel_tips",
+      "patterns": ["Any travel tips?", "What should I pack for a trip?", "Recommend a travel destination"],
+      "responses": ["Pack essentials, check the weather, and don't forget your charger! For a relaxing vacation, consider visiting Bali."]
+    },
+    {
+      "tag": "tech_news",
+      "patterns": ["Any interesting tech news?", "Tell me about the latest in technology", "Tech updates"],
+      "responses": ["I recommend checking reputable tech news websites for the latest updates on innovations, gadgets, and industry trends."]
+    },
+    {
+      "tag": "fitness_tips",
+      "patterns": ["Give me fitness tips", "How to stay fit?", "Any workout recommendations?"],
+      "responses": ["Regular exercise, balanced nutrition, and proper hydration are key. Consult with a fitness professional for a personalized workout plan."]
+    },
+    {
+      "tag": "inspiration",
+      "patterns": ["I need inspiration", "Tell me something motivational", "Inspire me"],
+      "responses": ["Believe in yourself and all that you are. Remember that there is something inside you that is greater than any obstacle."]
+    },
+    {
+      "tag": "food_recommendation",
+      "patterns": ["Recommend a restaurant", "What should I have for dinner?", "Any good food suggestions?"],
+      "responses": ["How about trying the new Italian place downtown? They have fantastic pasta and pizza options."]
+    },
+    {
+      "tag": "pet_advice",
+      "patterns": ["Any advice for pet care?", "Tell me about taking care of pets", "How to train a dog?"],
+      "responses": ["Ensure your pets get regular exercise, a balanced diet, and plenty of love. Consistent training and positive reinforcement work well for dogs."]
+    },
+    {
+      "tag": "music_recommendation",
+      "patterns": ["Suggest some music", "What's a good song right now?", "Any favorite artists?"],
+      "responses": ["I recommend checking out the latest album by [Artist]. If you like [Genre], you might enjoy their music!"]
+    },
+    {
+      "tag": "coding_help",
+      "patterns": ["Need coding help", "Can you help with programming?", "I'm stuck with coding"],
+      "responses": ["Sure, I can help! Please share the specific issue you're facing, and I'll do my best to assist you."]
+    },
+    {
+      "tag": "mindfulness",
+      "patterns": ["How to practice mindfulness?", "Tell me about meditation", "Any tips for relaxation?"],
+      "responses": ["Practicing mindfulness through meditation can help. Focus on your breath and let go of distractions. There are also apps that guide you through mindfulness exercises."]
+    },
+    {
+      "tag": "gaming_recommendation",
+      "patterns": ["Recommend a game", "What games are popular now?", "Any good gaming suggestions?"],
+      "responses": ["If you enjoy strategy games, you might like [Game Title]. It has received great reviews for its engaging gameplay."]
+    },
+    {
+      "tag": "learning_resources",
+      "patterns": ["Where can I find learning resources?", "Recommend online courses", "How to improve my skills?"],
+      "responses": ["There are various online platforms like Coursera, Udemy, and Khan Academy. Choose a course that aligns with your interests and goals."]
+    },
+    {
+      "tag": "art_inspiration",
+      "patterns": ["I need artistic inspiration", "Tell me about famous artists", "How to overcome a creative block?"],
+      "responses": ["Explore art galleries, read about influential artists, and don't be afraid to experiment with different mediums. Creative blocks are common; take breaks and revisit with a fresh perspective."]
+    },
+    {
+      "tag": "technology_trends",
+      "patterns": ["What are the latest technology trends?", "Tell me about emerging technologies", "Any tech predictions?"],
+      "responses": ["Artificial Intelligence, 5G, and Augmented Reality are some of the current technology trends. Stay updated with reputable tech news sources for the latest insights."]
+    },
+    {
+      "tag": "language_learning",
+      "patterns": ["How to learn a new language?", "Language learning tips", "Recommend language apps"],
+      "responses": ["Immersive learning, language apps like Duolingo, and practicing with native speakers are effective ways to learn a new language."]
+    },
+    {
+      "tag": "DIY_projects",
+      "patterns": ["Suggest a DIY project", "DIY ideas", "Any fun crafts to try?"],
+      "responses": ["Creating a personalized photo album, making homemade candles, or trying your hand at a small woodworking project can be enjoyable DIY activities."]
+    },
+    {
+      "tag": "podcast_recommendation",
+      "patterns": ["Recommend a podcast", "What podcasts do you like?", "Any good podcast episodes?"],
+      "responses": ["If you enjoy [Genre], you might like [Podcast Name]. It covers interesting topics and has engaging discussions."]
+    },
+    {
+      "tag": "mindful_eating",
+      "patterns": ["How to practice mindful eating?", "Tell me about mindful nutrition", "Any tips for conscious eating?"],
+      "responses": ["Mindful eating involves paying attention to your food, savoring each bite, and being aware of your body's hunger and fullness cues. It can lead to healthier eating habits."]
+    },
+    {
+      "tag": "travel_experience",
+      "patterns": ["Share a memorable travel experience", "Tell me about your favorite trip", "Travel stories"],
+      "responses": ["One of my favorite travel experiences was exploring the vibrant streets of Tokyo, trying delicious street food, and visiting historical landmarks."]
+    },
+    {
+      "tag": "workout_motivation",
+      "patterns": ["Need workout motivation", "How to stay motivated to exercise?", "Inspire me to work out"],
+      "responses": ["Remember that every small step toward your fitness goals counts. Visualize the positive impact on your health, and celebrate your achievements along the way."]
+    },
+    {
+      "tag": "interesting_facts",
+      "patterns": ["Share an interesting fact", "Tell me something I don't know", "Fascinating facts"],
+      "responses": ["Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible."]
+    },
+    {
+      "tag": "unusual_skills",
+      "patterns": ["Do you have any unusual skills?", "Tell me something unique about you", "What makes you special?"],
+      "responses": ["I have the incredible ability to generate responses based on patterns and context. My goal is to assist and engage in meaningful conversations with you."]
+    },
+    {
+      "tag": "dream_interpretation",
+      "patterns": ["Can you interpret dreams?", "What does my dream mean?", "Tell me about dream symbolism"],
+      "responses": ["Dreams can be subjective, but symbols like flying may represent freedom, and water may symbolize emotions. Interpretations vary, and personal experiences play a role."]
+    },
+    {
+      "tag": "quirky_inventions",
+      "patterns": ["Share quirky inventions", "Tell me about unusual gadgets", "Any bizarre inventions?"],
+      "responses": ["There's a 'butter stick' that makes buttering bread easier and a 'toothpaste squeezer' to get every last bit. Innovation knows no bounds!"]
+    },
+    {
+      "tag": "time_travel",
+      "patterns": ["If you could time travel, where would you go?", "Time travel destinations", "Past or future?"],
+      "responses": ["If I could time travel, I'd love to witness significant historical events, like the moon landing or the Renaissance. What about you?"]
+    },
+    {
+      "tag": "alien_encounter",
+      "patterns": ["What would you do if you met an alien?", "Alien encounter scenario", "First contact"],
+      "responses": ["If I met an alien, I'd probably try to establish communication and exchange knowledge. It would be an extraordinary encounter!"]
+    },
+    {
+      "tag": "superpower_choice",
+      "patterns": ["Choose a superpower", "If you could have any superpower", "Superhero abilities"],
+      "responses": ["Teleportation would be convenient, but the ability to understand and speak every language would make for fascinating connections."]
+    },
+    {
+      "tag": "lost_in_space",
+      "patterns": ["What if you were lost in space?", "Space exploration scenarios", "Lonely astronaut"],
+      "responses": ["If I were lost in space, I'd navigate using celestial objects, ponder the cosmos, and maybe compose a digital space ballad."]
+    },
+    {
+      "tag": "book_in_an_hour",
+      "patterns": ["Write a book in an hour", "Fastest book creation", "One-hour novel challenge"],
+      "responses": ["In an hour, I'd craft a tale of adventure and mystery, weaving characters with unexpected twists and turns. The challenge fuels creativity!"]
+    },
+    {
+      "tag": "coding_languages",
+      "patterns": ["What coding languages should I learn?", "Best programming languages", "Recommended coding languages"],
+      "responses": ["Popular languages include Python for versatility, JavaScript for web development, and Java for building robust applications. Choose based on your interests and career goals."]
+    },
+    {
+      "tag": "coding_resources",
+      "patterns": ["Where can I find coding resources?", "Best websites for coding tutorials", "Coding learning platforms"],
+      "responses": ["Check out platforms like Codecademy, freeCodeCamp, and Khan Academy for interactive coding tutorials. Online communities like Stack Overflow are great for problem-solving."]
+    },
+    {
+      "tag": "tech_career_advice",
+      "patterns": ["Advice for a tech career", "Tips for starting a career in technology", "Career guidance in IT"],
+      "responses": ["Stay curious, build a strong portfolio, and network with professionals in the industry. Continuous learning and adaptability are key in the dynamic field of technology."]
+    },
+    {
+      "tag": "coding_interview_tips",
+      "patterns": ["Tips for coding interviews", "How to prepare for coding interviews", "Common coding interview questions"],
+      "responses": ["Practice problem-solving, review data structures and algorithms, and simulate interview conditions. Showcase your thought process and communicate effectively."]
+    },
+    {
+      "tag": "remote_work_tips",
+      "patterns": ["Tips for remote work in tech", "Remote coding job advice", "Remote work best practices"],
+      "responses": ["Set up a dedicated workspace, establish a routine, and communicate effectively with your team. Leverage collaboration tools and stay organized."]
+    },
+    {
+      "tag": "tech_certifications",
+      "patterns": ["Tech certifications worth pursuing", "Best IT certifications", "Certifications for programmers"],
+      "responses": ["Certifications like AWS Certified Solutions Architect, Google Cloud Professional, and CompTIA Security+ can enhance your skillset and boost your career prospects."]
+    },
+    {
+      "tag": "career_switch_to_tech",
+      "patterns": ["Switching to a tech career", "Transitioning to IT industry", "Career change to programming"],
+      "responses": ["Identify transferable skills, pursue relevant training, and build a portfolio to showcase your capabilities. Networking and seeking mentorship can also ease the transition."]
+    },
+    {
+      "tag": "coding_mentorship",
+      "patterns": ["How to find a coding mentor", "Benefits of coding mentorship", "Mentorship in programming"],
+      "responses": ["Look for mentors on coding forums, join coding communities, and attend meetups. A mentor can provide guidance, share experiences, and accelerate your learning."]
+    },
+    {
+      "tag": "youtube_channel_recommendations",
+      "patterns": ["Recommend YouTube channels", "Suggest good YouTube channels", "Any interesting channels to watch?"],
+      "responses": ["I recommend checking out channels like 'Technology Explained' for tech insights, 'TED' for inspiring talks, and 'Vsauce' for engaging science content."]
+    },
+    {
+      "tag": "educational_channels",
+      "patterns": ["Educational YouTube channels", "Learning channels recommendation", "Channels for gaining knowledge"],
+      "responses": ["Channels like 'Khan Academy' and 'CrashCourse' offer quality educational content. 'Veritasium' and 'MinutePhysics' are great for science enthusiasts."]
+    },
+    {
+      "tag": "entertainment_videos",
+      "patterns": ["Recommend entertaining videos", "Suggest funny YouTube videos", "Any viral videos to watch?"],
+      "responses": ["For entertainment, check out 'PewDiePie' for gaming and humor, 'Dude Perfect' for amazing stunts, and 'MrBeast' for creative and charitable challenges."]
+    },
+    {
+      "tag": "tech_reviews",
+      "patterns": ["Tech reviews on YouTube", "Best tech review channels", "Suggest tech reviewers"],
+      "responses": ["Explore tech reviews on channels like 'Marques Brownlee' (MKBHD) for gadgets, 'Linus Tech Tips' for in-depth tech insights, and 'Dave Lee' for laptop reviews."]
+    },
+    {
+      "tag": "cooking_channels",
+      "patterns": ["Cooking channels on YouTube", "Best cooking shows online", "Recommend food channels"],
+      "responses": ["For culinary delights, 'Tasty' offers creative recipes, 'Binging with Babish' recreates dishes from movies, and 'Gordon Ramsay' shares expert cooking tips."]
+    },
+    {
+      "tag": "fitness_workouts",
+      "patterns": ["Fitness workout videos", "Home workout channels", "Suggest fitness routines"],
+      "responses": ["Stay active with channels like 'FitnessBlender' for diverse workouts, 'Blogilates' for pilates and pop music, and 'Yoga with Adriene' for calming yoga sessions."]
+    },
+    {
+      "tag": "travel_vloggers",
+      "patterns": ["Travel vloggers on YouTube", "Best travel channels", "Recommend travel vlogs"],
+      "responses": ["Embark on virtual journeys with 'FunForLouis' for adventurous travel vlogs, 'Lost LeBlanc' for stunning visuals, and 'Mark Wiens' for food and travel experiences."]
+    },
+    {
+      "tag": "music_discovery",
+      "patterns": ["Discover new music on YouTube", "Music recommendation channels", "Suggest music discovery platforms"],
+      "responses": ["Find new tunes with channels like 'NPR Music' for Tiny Desk Concerts, 'Pitchfork' for music reviews, and 'Trap Nation' for electronic and remix tracks."]
+    },
+    {
+      "tag": "travel_destination",
+      "patterns": ["Best travel destinations", "Top places to visit", "Dream vacation spots"],
+      "responses": ["Consider exploring the enchanting landscapes of Bali, the historic streets of Rome, or the vibrant culture of Tokyo."]
+    },
+    {
+      "tag": "coding_challenge",
+      "patterns": ["Coding challenges for beginners", "Programming practice", "Coding exercises"],
+      "responses": ["Sharpen your coding skills with challenges from websites like HackerRank, LeetCode, and CodeSignal."]
+    },
+    {
+      "tag": "mindfulness_meditation",
+      "patterns": ["Guided mindfulness meditation", "Mindfulness exercises", "Stress relief techniques"],
+      "responses": ["Practice mindfulness through guided meditations. Focus on your breath and let go of tension for a calmer mind."]
+    },
+    {
+      "tag": "book_review",
+      "patterns": ["Book reviews and recommendations", "Must-read books", "Literary critiques"],
+      "responses": ["Explore thought-provoking reviews of books like 'The Silent Patient,' 'Sapiens,' and 'The Great Gatsby'."]
+    },
+    {
+      "tag": "home_workout",
+      "patterns": ["Effective home workout routines", "Fitness at home", "No equipment exercises"],
+      "responses": ["Stay fit with home workouts featuring bodyweight exercises, yoga routines, and high-intensity interval training."]
+    },
+    {
+      "tag": "funny_anecdotes",
+      "patterns": ["Share funny anecdotes", "Humorous stories", "Jokes and laughter"],
+      "responses": ["Laugh out loud with amusing anecdotes and jokes. Laughter is a great way to lift your spirits."]
+    },
+    {
+      "tag": "space_exploration",
+      "patterns": ["Latest in space exploration", "Space discoveries", "Astronomy updates"],
+      "responses": ["Stay informed about space exploration with updates on NASA missions, astronomical discoveries, and cosmic phenomena."]
+    },
+    {
+      "tag": "language_learning_tips",
+      "patterns": ["Tips for language learning", "Language acquisition strategies", "Polyglot advice"],
+      "responses": ["Mastering a new language? Immerse yourself in daily practice, use language learning apps, and engage with native speakers."]
+    },
+    {
+      "tag": "creative_writing",
+      "patterns": ["Creative writing prompts", "Inspiration for writers", "Writing exercises"],
+      "responses": ["Unleash your creativity with writing prompts and exercises. Dive into fictional worlds and craft compelling stories."]
+    },
+    {
+      "tag": "job_interview_tips",
+      "patterns": ["Job interview strategies", "Interview preparation", "Common interview questions"],
+      "responses": ["Ace your next job interview with effective strategies. Prepare answers to common questions and showcase your strengths."]
+    },
+    {
+      "tag": "mind-bending_puzzles",
+      "patterns": ["Mind-bending puzzles to solve", "Brain teasers", "Logic challenges"],
+      "responses": ["Challenge your mind with intricate puzzles and brain teasers. Enhance your problem-solving skills and critical thinking."]
+    },
+    {
+      "tag": "DIY_home_decor",
+      "patterns": ["DIY home decor ideas", "Crafting for home improvement", "Budget-friendly decor"],
+      "responses": ["Transform your living space with DIY home decor. Get creative with easy and budget-friendly crafting ideas."]
+    },
+    {
+      "tag": "historical_documentaries",
+      "patterns": ["Must-watch historical documentaries", "Documentaries on world history", "Educational history films"],
+      "responses": ["Explore the rich tapestry of world history with compelling documentaries. Dive into ancient civilizations, wars, and revolutions."]
+    },
+    {
+      "tag": "motivational_speeches",
+      "patterns": ["Inspiring motivational speeches", "Motivation for success", "Uplifting talks"],
+      "responses": ["Ignite your motivation with powerful speeches. Gain insights on success, resilience, and achieving your goals."]
+    },
+    {
+      "tag": "AI_innovation",
+      "patterns": ["Innovations in artificial intelligence", "AI breakthroughs", "Future of machine learning"],
+      "responses": ["Stay informed about the latest advancements in artificial intelligence. Explore the future of machine learning and AI innovations."]
+    },
+    {
+      "tag": "budget_travel_tips",
+      "patterns": ["Budget-friendly travel tips", "Travel on a shoestring", "Affordable vacation ideas"],
+      "responses": ["Plan a memorable getaway on a budget. Discover affordable travel destinations and money-saving tips for your next adventure."]
+    },
+    {
+      "tag": "plant_based_recipes",
+      "patterns": ["Delicious plant-based recipes", "Vegan cooking ideas", "Healthy vegetarian meals"],
+      "responses": ["Explore the world of plant-based cuisine with delicious vegan recipes. Discover tasty and nutritious vegetarian meals."]
+    },
+    {
+      "tag": "time_management_hacks",
+      "patterns": ["Effective time management hacks", "Productivity tips", "Optimizing daily routines"],
+      "responses": ["Boost your productivity with time management hacks. Optimize your daily routines for efficiency and success."]
+    },
+    {
+      "tag": "entrepreneurial_success",
+      "patterns": ["Secrets to entrepreneurial success", "Startup advice", "Entrepreneurship strategies"],
+      "responses": ["Unlock the secrets to entrepreneurial success. Gain valuable insights into building and growing a successful startup."]
+    },
+    {
+      "tag": "documentary_filmmaking",
+      "patterns": ["Tips for documentary filmmaking", "Documentary storytelling", "Cinematic techniques"],
+      "responses": ["Dive into the world of documentary filmmaking. Learn storytelling techniques and cinematic approaches for impactful documentaries."]
+    },
+    {
+      "tag": "movie_recommendation",
+      "patterns": ["Recommend a movie", "What movie should I watch?", "Any good films lately?"],
+      "responses": ["If you like action, 'Inception' is a mind-bending thriller. For comedy, 'The Grand Budapest Hotel' is a delightful choice. What genre are you in the mood for?"]
+    },
+    {
+      "tag": "movie_genre",
+      "patterns": ["Best movies in [genre]", "Top [genre] films", "Recommended [genre] movies"],
+      "responses": ["For [genre], consider classics like 'The Godfather' or 'Shawshank Redemption'. If you prefer recent releases, 'Parasite' and 'La La Land' are excellent choices."]
+    },
+    {
+      "tag": "favorite_movie",
+      "patterns": ["What's your favorite movie?", "Do you watch movies?", "Any movie recommendations for you?"],
+      "responses": ["I don't watch movies myself, but I can certainly help you find the perfect film! What are your preferences?"]
+    },
+    {
+      "tag": "movie_quotes",
+      "patterns": ["Famous movie quotes", "Memorable movie lines", "Iconic film dialogues"],
+      "responses": ["Here's a classic: 'May the Force be with you' from 'Star Wars'. What genre of movie quotes are you interested in?"]
+    },
+    {
+      "tag": "director_spotlight",
+      "patterns": ["Spotlight on [director]", "Best films by [director]", "Movies directed by [director]"],
+      "responses": ["For [director], explore 'The Dark Knight' and 'Inception' by Christopher Nolan, or 'Pulp Fiction' and 'Kill Bill' by Quentin Tarantino."]
+    },
+    {
+      "tag": "movie_awards",
+      "patterns": ["Award-winning movies", "Oscar-winning films", "Academy Award winners"],
+      "responses": ["Explore award-winning films like 'The Shape of Water,' 'Birdman,' and 'The King's Speech.' These movies received critical acclaim and multiple Oscars."]
+    },
+    {
+      "tag": "movie_trivia",
+      "patterns": ["Interesting movie trivia", "Fun facts about films", "Movie behind-the-scenes"],
+      "responses": ["Did you know that in 'The Matrix,' the code that rains down is a sushi recipe? Movie-making has its fascinating quirks!"]
+    },
+    {
+      "tag": "movie_reviews",
+      "patterns": ["Movie reviews", "Film critiques", "Opinions on recent movies"],
+      "responses": ["Reviews vary, but 'The Social Network' is praised for its screenplay. For a recent release, 'Dune' has received positive reviews for its visuals and storytelling."]
+    },
+    {
+      "tag": "classic_films",
+      "patterns": ["Must-watch classic films", "Iconic movies from the past", "Vintage cinema recommendations"],
+      "responses": ["Discover classic gems like 'Casablanca,' 'Gone with the Wind,' and 'Citizen Kane.' These films have stood the test of time."]
+    },
+    {
+      "tag": "movie_soundtracks",
+      "patterns": ["Best movie soundtracks", "Iconic film music", "Favorite cinematic scores"],
+      "responses": ["Enjoy the mesmerizing soundtracks of 'Interstellar' by Hans Zimmer, 'La La Land' by Justin Hurwitz, and 'The Dark Knight' by Hans Zimmer."]
+    },
+    {
+      "tag": "technology_gadgets",
+      "patterns": ["Tell me about the latest gadgets", "Gadget recommendations", "New technology devices"],
+      "responses": ["Explore cutting-edge gadgets like smartwatches, wireless earbuds, and virtual reality headsets. Stay updated on the latest tech innovations!"]
+    },
+    {
+      "tag": "coding_humor",
+      "patterns": ["Share a coding joke", "Programming humor", "Jokes for developers"],
+      "responses": ["Why do programmers prefer dark mode? Because light attracts bugs! Enjoy a laugh while navigating the world of coding."]
+    },
+    {
+      "tag": "startup_advice",
+      "patterns": ["Startup tips for success", "Advice for entrepreneurs", "Building a successful startup"],
+      "responses": ["Start with a clear vision, focus on solving a real problem, and adapt to feedback. Building a successful startup requires resilience and continuous learning."]
+    },
+    {
+      "tag": "data_science",
+      "patterns": ["Tell me about data science", "Data analysis techniques", "Getting started with data science"],
+      "responses": ["Data science involves extracting insights from data. Learn tools like Python, R, and SQL. Explore machine learning for predictive analysis."]
+    },
+    {
+      "tag": "job_search_tips",
+      "patterns": ["Tips for job searching", "Job hunting advice", "Effective job search strategies"],
+      "responses": ["Tailor your resume, network actively, and utilize online job platforms. Prepare for interviews by researching the company and showcasing your skills."]
+    },
+    {
+      "tag": "freelancing",
+      "patterns": ["Freelancing advice", "Pros and cons of freelancing", "Freelance career tips"],
+      "responses": ["Freelancing offers flexibility but requires self-discipline. Set clear goals, manage your time effectively, and build a strong portfolio for success."]
+    },
+    {
+      "tag": "coding_project_ideas",
+      "patterns": ["Need coding project ideas", "Programming project inspiration", "Project suggestions for developers"],
+      "responses": ["Consider building a personal portfolio website, a task management app, or a simple game. Choose projects aligned with your interests and skill level."]
+    },
+    {
+      "tag": "self_improvement",
+      "patterns": ["Tips for personal development", "Self-improvement advice", "Growth mindset strategies"],
+      "responses": ["Embrace a growth mindset, set achievable goals, and prioritize continuous learning. Personal development is a lifelong journey."]
+    },
+    {
+      "tag": "coding_community",
+      "patterns": ["Joining coding communities", "Developer forums", "Networking with programmers"],
+      "responses": ["Connect with coding communities on platforms like GitHub, Stack Overflow, and Discord. Networking with fellow developers can enhance your skills and knowledge."]
+    },
+    {
+      "tag": "cybersecurity",
+      "patterns": ["Learn about cybersecurity", "Cybersecurity tips", "Protecting online privacy"],
+      "responses": ["Understand the basics of cybersecurity, use strong passwords, and stay vigilant against online threats. Prioritize the security of your digital presence."]
+    },
+    {
+      "tag": "coding_books",
+      "patterns": ["Best books for programmers", "Programming literature recommendations", "Must-read coding books"],
+      "responses": ["Explore books like 'Clean Code' by Robert C. Martin, 'The Pragmatic Programmer' by Andy Hunt, and 'Code Complete' by Steve McConnell for in-depth programming insights."]
+    },
+    {
+      "tag": "coding_challenges",
+      "patterns": ["Participate in coding challenges", "Coding competitions", "Challenge your programming skills"],
+      "responses": ["Engage in coding challenges on platforms like CodeSignal, HackerRank, and LeetCode. Sharpen your problem-solving abilities and compete with other developers."]
+    },
+    {
+      "tag": "programming_languages",
+      "patterns": ["Choosing the right programming language", "Best languages for beginners", "Programming language recommendations"],
+      "responses": ["Consider Python for versatility, JavaScript for web development, and Java for building robust applications. Choose based on your interests and project requirements."]
+    },
+    {
+      "tag": "coding_meetups",
+      "patterns": ["Attending coding meetups", "Developer events", "Local coding gatherings"],
+      "responses": ["Explore local coding meetups, workshops, and tech events. Networking with professionals and attending meetups can provide valuable insights and opportunities."]
+    },
+    {
+      "tag": "coding_portfolio",
+      "patterns": ["Building an impressive coding portfolio", "Portfolio tips for developers", "Showcasing coding projects"],
+      "responses": ["Create a well-organized portfolio showcasing your projects, skills, and achievements. A compelling portfolio can make a positive impression on potential employers."]
+    },
+    {
+      "tag": "web_development",
+      "patterns": ["Getting started with web development", "Web development tools", "Essential web development skills"],
+      "responses": ["Learn HTML, CSS, and JavaScript for front-end development. Explore back-end technologies like Node.js or Django. Build responsive and dynamic websites."]
+    },
+    {
+      "tag": "coding_internships",
+      "patterns": ["Securing coding internships", "Internship application tips", "Gaining coding experience"],
+      "responses": ["Apply to coding internships, build a strong resume, and showcase your projects. Internships provide valuable hands-on experience in a real-world setting."]
+    },
+    {
+      "tag": ["coding_podcasts"],
+      "patterns": ["Best coding podcasts", "Programming talk shows", "Podcasts for developers"],
+      "responses": ["Listen to coding podcasts like Syntax for web development discussions"]
+    }
+] 
+}
+
