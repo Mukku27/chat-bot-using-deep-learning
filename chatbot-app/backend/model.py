@@ -33,7 +33,7 @@ for intent in data['intents']:
         labels.append(intent['tag'])
 
 num_classes = len(labels)
-labels
+
 
 label_encoder=LabelEncoder()
 label_encoder.fit(training_labels)
